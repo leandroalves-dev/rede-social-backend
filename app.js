@@ -16,7 +16,8 @@ app.use(express.urlencoded({ extended: false }));
 // cors
 app.use(cors({
     credentials: true,
-    origin: ['http://localhost:5173', 'https://rede-social-backend-8hib.onrender.com']
+    origin: ['http://localhost:5173', 'https://rede-social-backend-8hib.onrender.com'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Certifique-se de permitir as opções
 }));
 
 // upload directory
