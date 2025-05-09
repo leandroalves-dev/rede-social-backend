@@ -16,7 +16,7 @@ const allowedOrigins = [ 'http://localhost:5173', 'https://seudominio.com' ];
 // cors
 app.use(cors({
     credentials: true,
-    origin: ['http://localhost:5173', 'https://rede-social-backend-8hib.onrender.com/']
+    origin: ['http://localhost:5173', 'https://rede-social-backend-8hib.onrender.com']
   }));
 
 // upload directory
