@@ -12,9 +12,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-//http://localhost:3000
+const allowedOrigins = [ 'http://localhost:5173', 'https://seudominio.com' ];
 // cors
-app.use(cors({ credentials: true, origin: 'http://localhost:5173' }));
+app.use(cors({
+    credentials: true,
+    origin: ['http://localhost:5173', 'https://rede-social-backend-8hib.onrender.com/']
+  }));
 
 // upload directory
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
