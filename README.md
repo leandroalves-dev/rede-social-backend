@@ -26,12 +26,12 @@ Este é o backend de uma aplicação de rede social, desenvolvido com foco em ap
    ```bash
    npm install
 
-4. Configure o arquivo .env
+## Configure o arquivo .env
 
 Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
 
-MONGO_URI=sua_string_de_conexão_com_mongodb
-JWT_SECRET=sua_chave_secreta  
+-   MONGO_URI=sua_string_de_conexão_com_mongodb
+-   JWT_SECRET=sua_chave_secreta  
 
 3. Rode o projeto
     ```bash
